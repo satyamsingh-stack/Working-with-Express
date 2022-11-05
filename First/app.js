@@ -14,7 +14,10 @@ app.get('/contact',(req,res)=>{
 })
 
 app.get('/temp',(req,res)=>{
-    res.send("Welcome to temp Page");
+    res.send({
+        id:1,
+        name:"Satyam Singh"
+    });
 })
 port = 4200;
 app.listen(4200,()=>{
